@@ -1,0 +1,182 @@
+/* Set Base Body CSS blank slate */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #e0e0e0;
+}
+
+.hp-text{
+  width: 800px;
+  height: 400px;
+  background-color: red;
+  padding: 25px;
+  margin: 25px;
+}
+
+.hp-text h1{
+  font-family: Replica;
+  font-size: 50px;
+  color: dodgerblue;
+}
+
+.hp-text h2{
+  font-family: Replica;
+  font-size: 20px;
+  color: dodgerblue;
+}
+
+.hp-icon{
+  position: fixed;
+  right: 0;
+  top: 0;
+  margin: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Load Fonts from folder*/
+@font-face {
+  font-family: GraphikBold;
+  src: url(../fonts/Graphik-Bold.otf);
+}
+
+@font-face {
+  font-family: Graphik;
+  src: url(../fonts/Graphik.otf);
+}
+
+@font-face {
+  font-family: Bookish;
+  src: url(../fonts/Bookish.otf);
+}
+
+@font-face {
+  font-family: ReplicaBold;
+  src: url(../fonts/ReplicaLL-Bold.otf);
+}
+
+@font-face {
+  font-family: Replica;
+  src: url(../fonts/ReplicaLL-Regular.otf);
+}
+
+@font-face {
+  font-family: ReplicaLight;
+  src: url(../fonts/ReplicaLL-Light.otf);
+}
+
+/* Hide scrollbar for Chrome, Safari, and Edge */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for Firefox */
+html {
+  scrollbar-width: none;
+}
+
+/* Hide scrollbar for Internet Explorer */
+body {
+  -ms-overflow-style: none;
+}
+
+/* Useful, But Hard to Remember CSS Structures */
+/* ScreenSize Adjustment, Animation, Load Font, Have img Fit Inside Div */
+
+@media all and (max-width: 800px) {
+  .ExampleClass {
+    display: none;
+  }
+}
+
+.ExampleClass {
+  /* Useful css (commonly used) */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  box-sizing: border-box;
+
+  animation: name duration timing-function delay iteration-count direction fill-mode;
+  animation: AnimationName 1s ease-in infinite;
+
+  filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.5));
+
+  transform: translateX(50px);
+
+  mix-blend-mode: color-burn;
+
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 15px;
+  border-width: 1px 0px 0px 0px;
+
+}
+
+/* You can make it simple */
+@keyframes AnimationName2 {
+
+  0% {
+    width: 10px;
+  }
+
+  100% {
+    width: 50px;
+  }
+
+}
+
+/* You can add more breakpoints with percentages for more keyframes */
+@keyframes AnimationName {
+
+  0% {
+    font-size: 0px;
+  }
+
+  50% {
+    font-size: 15px;
+  }
+
+  100% {
+    font-size: 10px;
+  }
+
+}
+
+/* Font Loader from local files */
+@font-face {
+  font-family: FontName;
+  src: url(../fonts/Fontname.otf);
+}
+
+/* This image css always fills the div it is inside/scales the image and doesnt overflow */
+.ExampleClass img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
